@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin: 0 auto;
+}
+/* ====================== header ====================== */
+.header {
+  background-color: black;
+}
+.logo {
+  width: 90px;
+  height: 90px;
+}
+.header-body {
+  display: flex;
+  align-items: center;
+  gap: 235px;
+}
+.navbar-item {
+  position: relative;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+}
+.navbar-item__link {
+  color: white;
+  padding: 15px 8px 30px;
+}
+
+.navbar-item__link:hover {
+  opacity: 0.8;
+}
+.dropdown {
+  border: 1px solid black;
+  opacity: 0;
+  position: absolute;
+  background-color: #fff;
+  transition: 0.5s;
+  top: 53px;
+  width: 137px;
+}
+.navbar-item:hover .dropdown {
+  opacity: 1;
+}
+.dropdown-item__link {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7.5px;
+  transition: 0.5s;
+}
+.dropdown-item__link:hover {
+  background: black;
+  color: pink;
+}
+/* ====================== sanpham ================== */
+.sp {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 1170px;
+  margin: 0 auto;
+}
+.imgsp {
+  text-align: center;
+  cursor: pointer;
+}
+.imgsp-items {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  transition: 0.5s;
+  margin-top: 17px;
+}
+.imgsp-items:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.imgsp-name {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}

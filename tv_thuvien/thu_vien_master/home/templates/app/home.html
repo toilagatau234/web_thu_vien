@@ -28,6 +28,7 @@
             alt="hình ảnh"
             class="logo"
           />
+
           <nav class="navbar">
             <ul class="navbar-list">
               <li class="navbar-item">
@@ -39,7 +40,11 @@
                 <ul class="dropdown">
                   <ul class="dropdown-detail">
                     <li class="dropdown-item">
-                      <a href="" class="dropdown-item__link">Trinh Thám</a>
+                      <a
+                        href={%url 'hangHoa'%}
+                        class="dropdown-item__link"
+                        >Trinh Thám</a
+                      >
                     </li>
                     <li class="dropdown-item">
                       <a href="" class="dropdown-item__link">Địa lý</a>
@@ -72,8 +77,9 @@
                 phú mọi lúc mọi nơi
               </p>
               <div class="intro-cta">
-                <button class="intro-btn">SIGN IN</button>
-                <button class="intro-btn">SIGN UP</button>
+                <a href=''> </a>
+                <button class="intro-btn"> <a href={%url 'signup'%}> SIGN IN </a></button>
+                <button class="intro-btn"> <a href={%url 'login'%}>SIGN UP </a> </button>
               </div>
             </div>
             <div class="intro-right">
@@ -153,6 +159,7 @@
         </div>
       </div>
     </footer>
+
     <script src="" async defer></script>
   </body>
 </html>

@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'app/css/spham.css' %}" />
+  </head>
+
+  <body>
+    <header class="header fix">
+      <div class="main-content">
+        <div class="header-body">
+          <img
+            src="{% static 'app/img/logo.png' %}"
+            alt="hình ảnh"
+            class="logo"
+          />
+
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="" class="navbar-item__link">TRANG CHỦ</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-item__link">THỂ LOẠI SÁCH</a>
+                <!-- dropdown -->
+                <ul class="dropdown">
+                  <ul class="dropdown-detail">
+                    <li class="dropdown-item">
+                      <a href="" class="dropdown-item__link">Trinh Thám</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="" class="dropdown-item__link">Địa lý</a>
+                    </li>
+                    <li class="dropdown-item">
+                      <a href="" class="dropdown-item__link">Toán học</a>
+                    </li>
+                  </ul>
+                </ul>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-item__link">GÓC REVIEW</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="sp">
+      {% for sanpham in sanphams %}
+      <!-- item 1 -->
+      <div class="main">
+        <div class="imgsp">
+          <a href="">
+            <img
+              class="imgsp-items"
+              src="{% static 'app/img/' %}{{ sanpham.hinhAnh }}"
+              alt=""
+            />
+          </a>
+          <p class="imgsp-name">{{ sanpham.tenSanPham }}</p>
+          <span class="imgsp-price"></span>
+        </div>
+        <!-- html -->
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
