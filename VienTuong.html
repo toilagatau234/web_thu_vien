@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="./css/style.css"> 
+<!-- header -->
+</head>
+<body>
+  <header class="header fix">
+    <div class="main-content">
+      <div class="header-body">
+        <img src="./img/logo.png" alt="hình ảnh" class="logo" />
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-item__link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a href="" class="navbar-item__link">THỂ LOẠI SÁCH</a>
+              <!-- dropdown -->
+              <ul class="dropdown">
+                <ul class="dropdown-detail">
+                  <li class="dropdown-item">
+                    <a href="./TrinhTham.html" class="dropdown-item__link">Trinh Thám</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="./ThanThoai.html" class="dropdown-item__link">Thần Thoại</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="./VienTuong.html" class="dropdown-item__link">Viễn Tưởng</a>
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="" class="navbar-item__link">GÓC REVIEW</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+<!---- product menu section start --> 
+    <section class="products"> 
+        <h1>VIỄN TƯỞNG</h1> 
+        <p>Sách viễn tưởng là một thể loại văn học đầy mê hoặc, đưa chúng ta đến những thế giới tưởng tượng, những tương lai xa xôi hoặc những quá khứ huyền bí. Thay vì miêu tả những sự kiện có thật, sách viễn tưởng xây dựng nên những câu chuyện dựa trên trí tưởng tượng phong phú của tác giả, kết hợp với kiến thức khoa học hoặc yếu tố thần thoại.</p> 
+ 
+        <div class="product-row"> 
+            <div class="product-col"> 
+                <h4>Dune (Đồi cát)</h4> 
+                <p>Về một hành tinh sa mạc khắc nghiệt và cuộc chiến giành quyền kiểm soát một loại gia vị quý hiếm. không chỉ là một câu chuyện phiêu lưu, tác phẩm triết học sâu sắc về quyền lực, số phận và con người.</p> 
+                <img src="{% static 'images/img-1.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>The Lord of the Rings</h4> 
+                <p>Về cuộc hành trình của Frodo Baggins để tiêu diệt chiếc nhẫn quyền năng. Thế giới Trung địa của trở thành thế giới tưởng tượng nổi tiếng nhất và được yêu thích nhất mọi thời đại.</p> 
+                <img src="{% static 'images/img-2.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>A Game of Thrones</h4> 
+                <p>Một tác phẩm giả tưởng đen tối và phức tạp, kể về cuộc chiến giành ngai vàng ở lục địa Westeros. Cuốn sách nổi tiếng với những tình tiết bất ngờ, những nhân vật phức tạp và những cuộc chiến khốc liệt.</p> 
+                <img src="{% static 'images/img-3.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Neuromancer</h4> 
+                <p>Một trong những tác phẩm tiên phong của thể loại cyberpunk, Neuromancer vẽ nên một tương lai đen tối với công nghệ phát triển vượt bậc nhưng cũng đầy nguy hiểm.</p>
+                <img src="{% static 'images/img-4.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 

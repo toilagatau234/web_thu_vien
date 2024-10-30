@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="./css/style.css"> 
+<!-- header -->
+</head>
+<body>
+  <header class="header fix">
+    <div class="main-content">
+      <div class="header-body">
+        <img src="./img/logo.png" alt="hình ảnh" class="logo" />
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-item__link">TRANG CHỦ</a>
+            </li>
+            <li class="navbar-item">
+              <a href="" class="navbar-item__link">THỂ LOẠI SÁCH</a>
+              <!-- dropdown -->
+              <ul class="dropdown">
+                <ul class="dropdown-detail">
+                  <li class="dropdown-item">
+                    <a href="./TrinhTham.html" class="dropdown-item__link">Trinh Thám</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="./ThanThoai.html" class="dropdown-item__link">Thần Thoại</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="./VienTuong.html" class="dropdown-item__link">Viễn Tưởng</a>
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li class="navbar-item">
+              <a href="" class="navbar-item__link">GÓC REVIEW</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+<!---- product menu section start --> 
+    <section class="products"> 
+        <h1>TRINH THÁM</h1> 
+        <p>Truyện trinh thám là một thể loại văn học hấp dẫn, xoay quanh việc điều tra và giải quyết các vụ án hình sự. Độc giả sẽ cùng các nhân vật chính, thường là những thám tử tài năng, đi sâu vào từng chi tiết nhỏ để tìm ra hung thủ và khám phá sự thật đằng sau những vụ án bí ẩn.</p> 
+ 
+        <div class="product-row"> 
+            <div class="product-col"> 
+                <h4>Mật Mã Da Vinci</h4> 
+                <p>giải mã những mật mã phức tạp ẩn chứa trong các tác phẩm nghệ thuật của Leonardo da Vinci để tìm ra sự thật.</p> 
+                <img src="{% static 'images/img-1.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Sherlock Holmes</h4> 
+                <p>vị thám tử tư tài ba và lạnh lùng với khả năng suy luận logic siêu phàm. Nguồn ảm hứng cho những ai yêu thích trinh thám</p> 
+                <img src="{% static 'images/img-2.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Phía sau nghi can X</h4> 
+                <p>Về câu chuyện tình yêu đẹp nhưng bi kịch, đan xen với một vụ án mạng hoàn hảo. Tình tiết bất ngờ và cái kết đầy cảm động.</p> 
+                <img src="{% static 'images/img-3.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
+            <div class="product-col"> 
+                <h4>Hỏa ngục</h4> 
+                <p>Tiếp nối Mật mã Da Vinci, đưa độc giả vào một cuộc phiêu lưu đầy nguy hiểm, khám phá những bí ẩn về địa ngục và ý nghĩa của Dante.</p> 
+                <img src="{% static 'images/img-4.png' %}" alt=""> 
+ 
+                <div class="bottom"> 
+                    <a href="#" class="buy">Buy Now</a> 
+                    <a href="#" class="read">Read Now</a> 
+                    <span>Price $30</span> 
+                </div> 
+            </div> 
