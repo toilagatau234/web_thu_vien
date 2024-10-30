@@ -112,47 +112,83 @@ li {
   height: 450px;
 }
 /* ================= footer ==================== */
-.footer {
-  margin-top: 15px;
-  padding: 15px 0;
+.mt-40
+{
+    display: flex;
 }
-.footer-body {
+.mt-40 a i img
+{
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.location_con .com_info .la-mb .fa img
+{
+    width: 20px;
+    height: 20px;
+}
+.com_info dd{
+  color:bisque
+}
+#footer-info{
+  height: 309px;
+  background-color: #041634;
+  border-bottom: 1px solid black;
+}
+#footer-designer{
+  height: 40px;
+  background-color: red;
+}
+.footer-about{
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.footer-about ul li
+{
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-about ul li a {
+  width: 47px;
+  height: 47px;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.footer-about ul li a.facebook {
+  background-image: url('../img/ft_1_facbook.png');
+}
+.footer-about ul li a.zalo {
+  background-image: url('../img/ft_1_zalo.png');
+}
+.footer-about ul li a.tiktok {
+  background-image: url('../img/ft_1_tiktok.png');
+}
+.footer-about ul li a.youtube {
+  background-image: url('../img/ft_1_youtube.png');
+}
+.footer-about ul li a.instagram {
+  background-image: url('../img/ft_1_instagram.png');
+}
+.footer-copyright .copyright p {
+  color: #fff;
+  margin: 0;
+  font-size: 11px;
+  line-height: 18px;
+  margin-top: 12px;
+}
+.footer-copyright .row
+{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.footer-location {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+.col-md-8 .copyright p
+{
+  margin-left: 70px;
 }
-.footer-des__name {
-  font-size: 16px;
-  padding: 0 0 2px 0;
-  font-weight: bold;
-}
-.footer-des__add {
-  font-size: 12.5px;
-  padding: 2px 0 0 0;
-}
-.footer-call {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.footer-call__icon {
-  display: flex;
-}
-.footer-call__icon--link {
-  margin-top: 5px;
-  padding: 5px;
-}
-.footer-location__img--icon-thump {
-  width: 30px;
-  height: 32px;
-}
-.footer-call__icon--link--thump {
-  height: 25px;
-  width: 25px;
+.col-md-4 .copyright p
+{
+  margin-left: 810px;
 }
